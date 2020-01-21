@@ -11,10 +11,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author mq_xu
- * @description SwaggerConfig
- * @create 2020/1/7
- */
+ * @Author zhengliang
+ * @Date 2020/1/15
+ * @Version 1.0
+ **/
 @Configuration
 public class CorsConfig {
     @Bean
@@ -43,4 +43,5 @@ public class CorsConfig {
         return bean;
     }
 }
+
 

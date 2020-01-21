@@ -8,9 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.scs.soft.zhihu.api.mapper")
 public class ZhihuApiApplication {
 
-    public static void main(String[] args)
-    {
-        SpringApplication.run(ZhihuApiApplication.class,args);
+    public static void main(String[] args) {
+        SpringApplication.run(ZhihuApiApplication.class, args);
     }
 
 }

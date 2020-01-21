@@ -10,16 +10,17 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description TODO
  * @Author zhengliang
  * @Date 2020/1/15
+ * @Version 1.0
  **/
 @Service
 public class SpecialServiceImpl implements SpecialService {
     @Resource
     private SpecialMapper specialMapper;
+
     @Override
-    public List<Map> selectAll() {
+    public List<Map> selectAll(){
         return specialMapper.selectAll();
     }
 
@@ -27,4 +28,6 @@ public class SpecialServiceImpl implements SpecialService {
     public List<Special> selectRecent() {
         return specialMapper.selectRecent();
     }
+
+
 }

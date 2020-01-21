@@ -1,7 +1,7 @@
 package com.scs.soft.zhihu.api.controller;
 
 import com.scs.soft.zhihu.api.common.Result;
-import com.scs.soft.zhihu.api.service.SpecialService;
+import com.scs.soft.zhihu.api.service.FavoriteService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,22 +10,22 @@ import javax.annotation.Resource;
 
 /**
  * @Author zhengliang
- * @Date 2020/1/15
+ * @Date 2020/1/19
  * @Version 1.0
  **/
 @RestController
-@RequestMapping(value = "/api/special")
-public class SpecialController {
+@RequestMapping(value = "/api/favorite")
+public class FavoriteController {
     @Resource
-    private SpecialService specialService;
+    private FavoriteService favoriteService;
 
     @GetMapping
-    public Result getRecent(){
-        return Result.success(specialService.selectRecent());
+    public Result getRecentFavorite(){
+        return  Result.success(favoriteService.selectRecentFavorite());
     }
 
     @GetMapping(value = "/all")
-    public Result getAll(){
-        return Result.success(specialService.selectAll());
+    public Result getAllRoundTable(){
+        return  Result.success(favoriteService.selectAllFavorite());
     }
 }

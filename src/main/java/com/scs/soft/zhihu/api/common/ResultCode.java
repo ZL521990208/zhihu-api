@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author mq_xu
- * @ClassName StingUtil
- * @Description 使用一个枚举全局管理API状态码，这对线上环境定位错误问题和后续接口文档的维护都是很有帮助
- * @Date 2019/12/1
+ * @Author zhengliang
+ * @Date 2020/1/15
  * @Version 1.0
  **/
 public enum ResultCode {
@@ -113,3 +111,4 @@ public enum ResultCode {
         }
     }
 }
+

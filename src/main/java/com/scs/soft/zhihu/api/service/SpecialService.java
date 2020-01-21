@@ -6,18 +6,20 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description TODO
  * @Author zhengliang
  * @Date 2020/1/15
+ * @Version 1.0
  **/
 public interface SpecialService {
     /**
      * 查询所有专题
+     *
      * @return List<Map>
      */
     List<Map> selectAll();
 
     /**
+     * 查询最新专题
      *
      * @return List<Special>
      */
